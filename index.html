@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajkamal | Portfolio Website | HTML , CSS , JavaScript</title>
+    <link rel="shortcut icon" href="assets/logo (2).png" type="image/x-icon" />
+
+    <!-- Google Font & Boxicons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Your External CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+  </head>
+  <script
+    src="https://kit.fontawesome.com/3815d60323.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="brand-info">
+          <img src="assets/logo (2).png" alt="" />
+          <h2>Portfolio</h2>
+        </div>
+        <div class="menu-area">
+          <input type="checkbox" id="menu-toggle" hidden />
+          <label for="menu-toggle" class="menu-icon"
+            ><i class="bx bx-menu"></i>
+          </label>
+          <label for="menu-toggle" id="overlay"> </label>
+          <nav>
+            <a href="#" style="--i: 1" data-tab="home" class="navlink active"
+              >Home</a
+            >
+            <a href="#" style="--i: 1" data-tab="services" class="navlink"
+              >Services</a
+            >
+            <a href="#" style="--i: 2" data-tab="about" class="navlink"
+              >About</a
+            >
+            <a href="#" style="--i: 3" data-tab="projects" class="navlink"
+              >Projects</a
+            >
+            <a href="#" style="--i: 4" data-tab="Contact" class="navlink"
+              >contact</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <section id="home" class="content active">
+        <div class="details">
+          <h2>
+            <span> Rajkamal </span>
+            Yadav
+          </h2>
+          <h3>
+            I`m
+            <span id="typing-span"></span>
+          </h3>
+          <p>
+            Web Developer with a Computer Science background, experienced in
+            HTML, CSS, JavaScript, React, Redux, and DSA. I completed an
+            internship at Prodigy Infotech, where I developed practical skills
+            in front-end technologies. I'm passionate about building
+            user-centric, responsive web applications.
+          </p>
+          <div class="bottom">
+            <button>Download CV</button>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-square-github"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="img-container">
+          <img
+            src="assets/Rajkamal.png"
+            alt="Profile"
+            title="Profile Picyure"
+            loading="lazy"
+          />
+        </div>
+      </section>
+      <section id="services" class="content">
+        <h2>My <span>Services</span></h2>
+        <div class="service-list"></div>
+      </section>
+
+      <section id="about" class="content">
+        <div class="sidebar">
+          <h3>Why Hire me</h3>
+          <p>
+            I'm a passionate and experienced MERN stack Developer who simplifies
+            complex concepts. I deliver quality and reliable website tailired to
+            client needs with full dedication and care.
+          </p>
+          <div class="tabs">
+            <span data-section="experience" class="tab">Experience</span>
+            <span data-section="education" class="tab">Education</span>
+            <span data-section="skills" class="tab">Skill</span>
+            <span data-section="about-me" class="tab">About-me</span>
+          </div>
+        </div>
+
+        <aside id="experience" class="tab-content">
+          <h2>My <span>Experience</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ea quos, nostrum iusto facilis esse.</p>
+          <div class="experience-list">
+            <div class="experience-box">
+              <h4>2023 - 2024</h4>
+              <h3>Frontend-developer</h3>
+              <div class="company-name">
+                <span></span>
+                <p>prodigy infotech</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus enim neque obcaecati quia odit, officia excepturi rem corrupti! Repellat?</p>
+            </div>
+          </div>
+        </aside>
+         <aside id="education" class="tab-content">
+          <h2>My <span>Education</span></h2>
+        </aside>
+         <aside id="skills" class="tab-content">
+          <h2>My <span>Skills</span></h2>
+        </aside>
+         <aside id="about-me" class="tab-content">
+          <h2>About <span>Me</span></h2>
+        </aside>
+      </section>
+
+      <section id="projects" class="content">Projects</section>
+
+      <section id="contact" class="content">contact</section>
+    </div>
+    <script src="scripts/script.js" type="module" defer></script>
+    <script src="scripts/about.js" defer></script>
+  </body>
+</html>
