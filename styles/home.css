@@ -154,7 +154,7 @@
   font-size: 2.5rem;
 }
 .social-icons a{
-  color: var(--white);
+  color: var(--green);
   transition: all ease 0.3s;
   width: 50px;
   height: 50px;
@@ -168,7 +168,11 @@
   font-size: 3.7rem;
 }
 .social-icons a:hover{
-  color: var(--green);
+  border-color: var(--green);
+  box-shadow: 5px 5px 5px var(--green),
+  -5px 5px 5px var(--green),
+  5px -5px 5px var(--green),
+  -5px -5px 5px var(--green);
   scale: 1;
 }
 @media screen and (width >= 768px) {

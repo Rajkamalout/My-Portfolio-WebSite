@@ -74,24 +74,21 @@ aboutTabs.forEach((tab) => {
           data: "2021 - 2024",
           degree: "Bachelor of Science in Computer Science",
           institution: "Nirmala Memorial Foundation College Mumbai University",
-          details:
-            "Studied core subjects like Data Structures, Web Development, App Development and Operating Systems. Built multiple academic projects using JavaScript and MERN Stack also Use Java and xml",
+          details:"Studied core subjects like Data Structures, Web Development, App Development and Operating Systems. Built multiple academic projects using JavaScript and MERN Stack also Use Java and xml",
         },
         {
           id: 2,
           data: "2020 - 2021",
           degree: "Higher Secondary Education (HSC - Science)",
           institution: "Vidya Varidhi Vidyalaya & Junior College",
-          details:
-            "Focused on Physics, Chemistry, and Mathematics. Developed a strong foundation in logical thinking and problem-solving.",
+          details:"Focused on Physics, Chemistry, and Mathematics. Developed a strong foundation in logical thinking and problem-solving.",
         },
         {
           id: 3,
           data: "2018 - 2019",
           degree: "Higher Secondary Education (HSC - Science)",
           institution: "Vidya Varidhi Vidyalaya & Junior College",
-          details:
-            "Completed basic schooling with distinction. Actively participated in computer clubs and tech-related events.",
+          details:"Completed basic schooling with distinction. Actively participated in computer clubs and tech-related events.",
         },
       ];
       const educationContent = educationList
@@ -151,63 +148,67 @@ aboutTabs.forEach((tab) => {
           id: 7,
           name: "HTML - Hyper Text Markup Language",
           icon: "assets/skills/nodejs.png",
-        }
+        },
       ];
-      const skillContent= skillList.map((ele)=>{
-        // return `<div class ="skill-box" key=${ele?.id}>
-        // <h1>${ele?.name}<h1>
-        // <h2>${ele?.icon}<h2>`
+      const skillContent = skillList
+        .map((ele) => {
+          // return `<div class ="skill-box" key=${ele?.id}>
+          // <h1>${ele?.name}<h1>
+          // <h2>${ele?.icon}<h2>`
 
-        // <img src="assets/skills/Bootstrap_logo.svg.png" dyanamic banana hai
+          // <img src="assets/skills/Bootstrap_logo.svg.png" dyanamic banana hai
 
-      return`
+          return `
        <div class="skill-box" key=${ele?.id}>
                <img src="${ele?.icon}" alt="${ele?.name}" title="${ele?.name}" loading="lazy" />
             </div>`;
-
-      }) 
-      .join("");
-      if(skills){
-        skills.innerHTML=skillContent;
+        })
+        .join("");
+      if (skills) {
+        skills.innerHTML = skillContent;
       }
-    }else if(activeTab ==="about-me")
-    {
-      const aboutinfo= document.querySelector(".about-info");
+    } else if (activeTab === "about-me") {
+      const aboutinfo = document.querySelector(".about-info");
 
-      const aboutList=[
+      const aboutList = [
         {
-          id:1,
-          key:"Name",
-          value:"Rajkamal"
+          id: 1,
+          key: "Name:",
+          value: "Rajkamal",
         },
         {
-          id:2,
-          key:"Conutry:",
-          value:"indai"
+          id: 2,
+          key: "Conutry:",
+          value: "India",
         },
         {
-          id:3,
-          key:"Industry:",
-          value:"6 months"
+          id: 3,
+          key: "Industry:",
+          value: "Software $ CS",
         },
         {
-          id:4,
-          key:"Address:",
-          value:"Nalasopara(East)"
-        }
+          id: 4,
+          key: "Experience",
+          value: "6 month",
+        },
+        {
+          id: 5,
+          key: "Address:",
+          value: "Nalasopara(East)",
+        },
+      ];
 
-      ]
-
-      const infoContent = aboutList.map((ele)=>{
-        return`
+      const infoContent = aboutList
+        .map((ele) => {
+          return `
         <div class="info-box" key="${ele?.id}">
-        <sapn> ${ele?.key}</span>
-        <sapn> ${ele?.value}</span>
+        <span> ${ele?.key}</span>
+        <span> ${ele?.value}</span>
         </div>`;
-      })
-      .join("");
-      if(aboutinfo){
-        aboutinfo.innerHTML=infoContent;
+        })
+        .join("");
+      if (aboutinfo) {
+        aboutinfo.innerHTML = infoContent;
       }
     }
   });
